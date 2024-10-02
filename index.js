@@ -13,8 +13,8 @@ app.use('/posts',postRouter)
 
 connection
 
-// app.get('/', (req, res) => res.send('Hello on my progect..!'))
+app.get('/', (req, res) => res.send('Hello on my progect..!'))
 
 app.use('*', (req, res) => res.status(404).json('Not Found'))
-app.get('/', (req, res) => res.json('Hello World!'))
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
